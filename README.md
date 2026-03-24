@@ -84,104 +84,92 @@ Shows only expired medicines with clear warning styling to alert staff for immed
 * Expired medicines are highlighted with distinct styling
 * Fully responsive design without JavaScript
 
-  # 🧾 CUBED SMS – Student Registration Form
-
----
+  # CUBED SMS – Student Registration Form
 
 ## Description
 
-A front-end student registration form designed for the **CUBED SMS (Student Management System)**.  
-This form provides a structured interface to input, manage, and organize student data efficiently.
+A front-end student registration form designed for the CUBED SMS (Student Management System). The form provides a structured and easy-to-use interface for entering and managing student data efficiently.
 
-It is intended to simplify student data entry while maintaining a clean and user-friendly design.
-
----
+It helps organize student information while maintaining a clean and simple user experience.
 
 ## Overview
 
-This project is a static form-based interface built using only **HTML5** and **CSS3**, without any backend or JavaScript functionality.
+This project is a fully static form interface built using only HTML5 and CSS3, without any backend or JavaScript functionality.
 
-The form focuses on:
-- Collecting detailed student information  
-- Providing a clear layout for data entry  
-- Simulating basic system actions (Add, Save, Delete)
+It focuses on structured data entry and simulates basic student management operations within a clear and responsive layout.
 
----
+## Form Sections
 
-## Form Fields
+### Student Information
 
-The form includes the following input fields:
+Includes the main student details:
 
-- Student ID  
-- Grade  
-- LRN (Learner Reference Number)  
-- Date of Enrollment (DOE)  
+* Student ID
+* Grade
+* LRN (Learner Reference Number)
+* Date of Enrollment (DOE)
 
-###  Personal Information
-- First Name  
-- Middle Name  
-- Last Name  
-- Sex  
-- Age  
-- Date of Birth  
-- Birth Place  
+### Personal Information
 
-###  Contact Information
-- Contact Number  
-- Address  
+Displays personal data fields such as:
 
-###  Family Information
-- Father's Name  
-- Father's Occupation  
-- Father's Employer  
+* First Name
+* Middle Name
+* Last Name
+* Sex
+* Age
+* Date of Birth
+* Birth Place
 
-- Mother's Name  
-- Mother's Occupation  
-- Mother's Employer  
+### Contact Information
 
----
+Contains basic contact details:
 
-##  Additional Features
+* Contact Number
+* Address
 
-- Upload student image  
-- Clean and structured layout  
-- Clearly labeled required fields (*)  
+### Family Information
 
----
+Includes parent details:
 
-## ⚙️ Actions Available
+* Father's Name
+* Father's Occupation
+* Father's Employer
 
-- ➕ Add new student record  
-- 💾 Save data  
-- ❌ Delete record  
-- 🗄️ Open database view (UI only)  
-- 🚪 Log out  
+* Mother's Name
+* Mother's Occupation
+* Mother's Employer
 
----
+## Features
+
+* Upload student photo
+* Clearly marked required fields
+* Organized and user-friendly layout
+* Simple navigation and structure
+
+## Actions Available
+
+* Add new student record
+* Save data
+* Delete record
+* Open database view (UI only)
+* Log out
 
 ## Technologies Used
 
-- HTML5  
-- CSS3  
-- Responsive Layout (basic)  
+* HTML5
+* CSS3
+* Basic Responsive Design
 
----
+## How to Run the Project
 
-##  How to Run the Project
+1. Download and extract the project folder
+2. Open `index.html` in any modern web browser
 
-1. Download or clone the repository  
-2. Open the project folder  
-3. Run `index.html` in any browser  
+## Design Notes
 
----
-
-##  Design Notes
-
-- Green-themed interface for a system-like appearance  
-- Simple and user-friendly layout  
-- All inputs are static (no backend functionality)  
-- Designed for demonstration and UI practice purposes  
-
----
-
+* Green-themed interface for a system-style design
+* Clean and structured form layout
+* All data is static (no backend functionality)
+* Designed for UI practice and demonstration purposes
 
