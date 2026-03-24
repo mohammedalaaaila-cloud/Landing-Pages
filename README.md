@@ -84,4 +84,104 @@ Shows only expired medicines with clear warning styling to alert staff for immed
 * Expired medicines are highlighted with distinct styling
 * Fully responsive design without JavaScript
 
+  # 🧾 CUBED SMS – Student Registration Form
+
+---
+
+## Description
+
+A front-end student registration form designed for the **CUBED SMS (Student Management System)**.  
+This form provides a structured interface to input, manage, and organize student data efficiently.
+
+It is intended to simplify student data entry while maintaining a clean and user-friendly design.
+
+---
+
+## Overview
+
+This project is a static form-based interface built using only **HTML5** and **CSS3**, without any backend or JavaScript functionality.
+
+The form focuses on:
+- Collecting detailed student information  
+- Providing a clear layout for data entry  
+- Simulating basic system actions (Add, Save, Delete)
+
+---
+
+## Form Fields
+
+The form includes the following input fields:
+
+- Student ID  
+- Grade  
+- LRN (Learner Reference Number)  
+- Date of Enrollment (DOE)  
+
+###  Personal Information
+- First Name  
+- Middle Name  
+- Last Name  
+- Sex  
+- Age  
+- Date of Birth  
+- Birth Place  
+
+###  Contact Information
+- Contact Number  
+- Address  
+
+###  Family Information
+- Father's Name  
+- Father's Occupation  
+- Father's Employer  
+
+- Mother's Name  
+- Mother's Occupation  
+- Mother's Employer  
+
+---
+
+##  Additional Features
+
+- Upload student image  
+- Clean and structured layout  
+- Clearly labeled required fields (*)  
+
+---
+
+## ⚙️ Actions Available
+
+- ➕ Add new student record  
+- 💾 Save data  
+- ❌ Delete record  
+- 🗄️ Open database view (UI only)  
+- 🚪 Log out  
+
+---
+
+## Technologies Used
+
+- HTML5  
+- CSS3  
+- Responsive Layout (basic)  
+
+---
+
+##  How to Run the Project
+
+1. Download or clone the repository  
+2. Open the project folder  
+3. Run `index.html` in any browser  
+
+---
+
+##  Design Notes
+
+- Green-themed interface for a system-like appearance  
+- Simple and user-friendly layout  
+- All inputs are static (no backend functionality)  
+- Designed for demonstration and UI practice purposes  
+
+---
+
 
