@@ -1,22 +1,31 @@
-First one
- Web Developer Landing Page
+# Web Developer Landing Page
+
+## Description
 
 A modern and responsive landing page designed for web developers to showcase their skills, services, and portfolio.
 
- Overview
+## Overview
 
 This project is a clean and visually appealing landing page tailored for web developers. It highlights the developer's role, services, and personal branding with a modern UI design.
 
-The page includes a strong hero section, descriptive content, and a call-to-action button to engage visitors.
+The page includes:
 
- Features
- Modern and clean UI design
- Fully responsive layout
- Fast loading and lightweight
-Developer-focused content section
-Call-to-action button
-Portfolio preview section
-Technologies Used
-HTML5
-CSS3
-(Optional) JavaScript
+* A strong hero section
+* Descriptive content
+* A clear call-to-action button
+
+## Features
+
+* Modern and clean UI design
+* Fully responsive layout
+* Fast loading and lightweight
+* Developer-focused content section
+* Call-to-action button
+* Portfolio preview section
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (optional)
+
