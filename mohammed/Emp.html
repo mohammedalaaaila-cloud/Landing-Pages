@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CUBED SMS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="logo logo-left">
+        <img src="images/d43e8340-5b25-4b6f-b958-efa02b635612.png" alt="Left Logo">
+      </div>
+
+      <h1 class="title">CUBED SMS</h1>
+
+      <div class="logo logo-right">
+        <img src="images/b80c04ed-1169-4963-9a06-8c8b2326764f.png" alt="Right Logo">
+      </div>
+    </div>
+
+    <div class="main-content">
+
+      <!-- LEFT SIDE FORM -->
+      <form class="student-form" autocomplete="off">
+
+        <div class="form-group required">
+          <label for="id_no">ID NO:</label>
+          <span class="star">*</span>
+          <input id="id_no" type="text" name="id_no" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="grade">Grade:</label>
+          <span class="star">*</span>
+          <select id="grade" name="grade" required>
+            <option value="" selected></option>
+            <option>Grade 7</option>
+            <option>Grade 8</option>
+            <option>Grade 9</option>
+            <option>Grade 10</option>
+            <option>Grade 11</option>
+            <option>Grade 12</option>
+          </select>
+        </div>
+
+        <div class="form-group required">
+          <label for="lrn">LRN:</label>
+          <span class="star">*</span>
+          <input id="lrn" type="text" name="lrn" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="doe">DOE:</label>
+          <span class="star">*</span>
+          <input id="doe" type="date" name="doe" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="last_name">Last Name:</label>
+          <span class="star">*</span>
+          <input id="last_name" type="text" name="last_name" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="first_name">First Name:</label>
+          <span class="star">*</span>
+          <input id="first_name" type="text" name="first_name" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="middle_name">Middle Name:</label>
+          <span class="star">*</span>
+          <input id="middle_name" type="text" name="middle_name" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="contact">Contact No:</label>
+          <span class="star">*</span>
+          <input id="contact" type="text" name="contact" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="address1">Address1:</label>
+          <span class="star">*</span>
+          <input id="address1" type="text" name="address1" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="sex">Sex:</label>
+          <span class="star">*</span>
+          <select id="sex" name="sex" required>
+            <option value="" selected></option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+
+        <div class="form-group required">
+          <label for="age">Age:</label>
+          <span class="star">*</span>
+          <input id="age" type="number" name="age" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="dob">Date of Birth:</label>
+          <span class="star">*</span>
+          <input id="dob" type="date" name="dob" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="birth_place">Birth Place:</label>
+          <span class="star">*</span>
+          <input id="birth_place" type="text" name="birth_place" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="father_name">Father's Name:</label>
+          <span class="star">*</span>
+          <input id="father_name" type="text" name="father_name" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="occupation1">Occupation1:</label>
+          <span class="star">*</span>
+          <input id="occupation1" type="text" name="occupation1" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="employer1">Employer's Name1:</label>
+          <span class="star">*</span>
+          <input id="employer1" type="text" name="employer1" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="address2">Address2:</label>
+          <span class="star">*</span>
+          <input id="address2" type="text" name="address2" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="mother_name">Mother's Name:</label>
+          <span class="star">*</span>
+          <input id="mother_name" type="text" name="mother_name" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="occupation2">Occupation2:</label>
+          <span class="star">*</span>
+          <input id="occupation2" type="text" name="occupation2" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="employer2">Employer's Name2:</label>
+          <span class="star">*</span>
+          <input id="employer2" type="text" name="employer2" required>
+        </div>
+
+        <div class="form-group required">
+          <label for="address3">Address3:</label>
+          <span class="star">*</span>
+          <input id="address3" type="text" name="address3" required>
+        </div>
+
+      </form>
+
+      <div class="right-section">
+
+        <div class="picture-box">
+          <div class="picture-preview">
+            <img id="imgPreview" src="images/1a9a6b26-b23c-44d0-b710-f6a0b050e06e.png" alt="Student Picture">
+          </div>
+
+          <input type="file" id="picture" name="picture" accept="image/*" hidden>
+          <label for="picture" class="browse-btn">Browse</label>
+        </div>
+
+        <div class="buttons">
+          <button type="button">Add</button>
+          <button type="button">Save</button>
+          <button type="button">Delete</button>
+          <button type="button">Database</button>
+          <button type="button">Log Out</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

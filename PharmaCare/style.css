@@ -1,0 +1,410 @@
+/* ============ Basic Reset ============ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f6f9fc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+
+  --primary: #1d4ed8;   /* medical blue */
+  --primary-soft: #e6efff;
+
+  --green-soft: #eafaf0;
+  --red-soft: #ffecec;
+
+  --border: #e2e8f0;
+  --shadow: 0 10px 25px rgba(2, 6, 23, 0.08);
+  --radius: 14px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Make layout breathe */
+main {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 24px 0 40px;
+}
+
+/* ============ Header & Navigation (Grid) ============ */
+.site-header {
+  width: min(1100px, 92%);
+  margin: 18px auto 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 16px;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  color: var(--primary);
+  letter-spacing: 0.4px;
+}
+
+/* Nav */
+.main-nav ul {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.main-nav a:hover {
+  background: var(--primary-soft);
+  border-color: #c7d2fe;
+}
+
+.main-nav a.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* ============ Sections ============ */
+section {
+  margin-top: 22px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.section-intro {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+/* ============ Hero (Grid) ============ */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.hero-text h2 {
+  font-size: 1.8rem;
+  color: var(--text);
+}
+
+.hero-text p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.hero-media {
+  display: grid;
+  place-items: center;
+}
+
+.placeholder-image {
+  width: 100%;
+  min-height: 190px;
+  border-radius: var(--radius);
+  border: 2px dashed #cbd5e1;
+  background: #f8fafc;
+  color: #64748b;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 16px;
+  font-weight: 600;
+}
+
+/* ============ Services ============ */
+.services h3,
+.dashboard-overview h3 {
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+.service-cards {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.service-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  background: #fbfdff;
+}
+
+.service-icon {
+  font-size: 1.6rem;
+}
+
+.service-card h4 {
+  margin-top: 8px;
+  font-size: 1.05rem;
+}
+
+.service-card p {
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+/* ============ Dashboard Overview (Grid) ============ */
+.stats-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.stat-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  background: #ffffff;
+}
+
+.stat-card h4 {
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.stat-number {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* ============ Footer ============ */
+.site-footer {
+  width: min(1100px, 92%);
+  margin: 0 auto 24px;
+  color: var(--muted);
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 900px) {
+  .site-header {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .main-nav ul {
+    grid-auto-flow: row;
+    justify-items: start;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.45rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ============ Inventory Table ============ */
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.inventory-table thead {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.inventory-table th {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* Hover effect */
+.inventory-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* ============ Stock Status Colors ============ */
+
+/* In Stock → Green */
+.inventory-table tr.in-stock {
+  background-color: var(--green-soft);
+}
+
+.inventory-table tr.in-stock td:nth-child(3) {
+  color: #15803d;
+  font-weight: 700;
+}
+
+/* Out of Stock → Red */
+.inventory-table tr.out-of-stock {
+  background-color: var(--red-soft);
+}
+
+.inventory-table tr.out-of-stock td:nth-child(3) {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+/* Expired Medicines → Warning */
+.inventory-table tr.expired {
+  background-color: #fff1f2;
+}
+
+.inventory-table tr.expired td {
+  color: #991b1b;
+  text-decoration: line-through;
+}
+
+.inventory-table tr.expired td:nth-child(3) {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* ============ Responsive Table ============ */
+@media (max-width: 700px) {
+  .inventory-table,
+  .inventory-table thead,
+  .inventory-table tbody,
+  .inventory-table th,
+  .inventory-table td,
+  .inventory-table tr {
+    display: block;
+  }
+
+  .inventory-table thead {
+    display: none;
+  }
+
+  .inventory-table tr {
+    margin-bottom: 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px;
+  }
+
+  .inventory-table td {
+    border: none;
+    padding: 6px 0;
+  }
+
+  .inventory-table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: var(--muted);
+    display: block;
+  }
+}
+/* ============ Expiry Tracker Page ============ */
+
+/* عنوان تحذيري للصفحة */
+main section h2 {
+  color: #991b1b;
+}
+
+/* فقرة التنبيه */
+main section .section-intro {
+  background-color: #fff1f2;
+  border-left: 6px solid #dc2626;
+  padding: 12px 14px;
+  border-radius: 8px;
+  color: #7f1d1d;
+  font-weight: 600;
+}
+
+/* تأكيد شكل الأدوية المنتهية */
+.inventory-table tr.expired {
+  background-color: #fee2e2;
+  border-left: 6px solid #dc2626;
+}
+
+.inventory-table tr.expired td {
+  color: #7f1d1d;
+  font-weight: 600;
+}
+
+/* تاريخ الانتهاء يكون أوضح */
+.inventory-table tr.expired td:last-child {
+  font-weight: 800;
+  color: #b91c1c;
+}
+
+/* أيقونة تحذير وهمية (شكل بصري فقط) */
+.inventory-table tr.expired td:first-child::before {
+  content: "⚠️ ";
+  margin-right: 4px;
+}
+
+/* Responsive cards – نفس جدول inventory */
+@media (max-width: 700px) {
+  .inventory-table tr.expired {
+    background-color: #fff1f2;
+  }
+}
+
+.hero-logo {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
