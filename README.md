@@ -29,7 +29,7 @@ The page includes:
 * CSS3
 * JavaScript (optional)
 
-* # The Second One – PharmaCare Web Prototype
+# The Second One – PharmaCare Web Prototype
 
 ## Description
 
